@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0" />
+  <link rel="stylesheet" href="swiper.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <header>
+    <div class="pc-menu">
+      <ul class="pc-menu-list">
+        <li><a href="#top">TOP</a></li>
+        <li><a href="#story">STORY</a></li>
+	      <li><a href="#character">CHARACTER</a></li>
+	      <li><a href="#news">NEWS</a></li>
+      </ul>
+    </div>
+    <div class="m-menu">
+      <a class="m-menu-icon" href="#!">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <nav class="navigation">
+      <ul class="m-menu-list">
+        <li><a href="#top">TOP</a></li>
+        <li><a href="#story">STORY</a></li>
+        <li><a href="#character">CHARATER</a></li>
+        <li><a href="#news">NEWS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="top" id="top">
+    <div class="scene01"></div>
+    <div class="logo"></div>
+    <div class="btn-sound"><a href="#!" class="off" ></a></div>
+    <audio src="img/bgm.mp3" class="bgm"></audio>
+  </section>
+
+  <section class="story" id="story">
+    <div class="story-header"></div>
+    <div class="story-txt">
+      <div class="story-img1"></div>
+      <div class="story-img2"></div>
+      <div class="story-img3"></div>
+      <div class="story-img4"></div>
+      <div class="story-img5"></div>
+    </div>
+    <div class="bg-story"></div>
+  </section>
+
+  <section class="character" id="character">
+    <div class="character-header"></div>
+    <div class="bg-character"></div>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide character01">
+          <div class="img"></div>
+          <div class="chara-detail">
+            <div class="label1"></div>
+            <div class="chara-txt1"></div>
+          </div>
+        </div>
+        <div class="swiper-slide  character02">
+          <div class="img"></div>
+          <div class="chara-detail">
+            <div class="label2"></div>
+            <div class="chara-txt2"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <div class="bg-news"></div>
+    <div class="news-header"></div>
+    <div class="movie">
+      <div class="btn-movie">
+        <a href="javascript:modalYoutube('DSl89cHVMzU');" ></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal">
+    <div class="youtube">
+      <div class="youtube-player"></div>
+    </div>
+    <div class="btn-modal-close">
+      <a class= "icon" href="#!">
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="copy">
+    <small>Copyright (c) NEXON arad</small>
+  </div>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="swiper.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>
