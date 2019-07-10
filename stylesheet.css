@@ -135,12 +135,12 @@ top
   height:910px;
 }
 @media (max-width: 800px) {
-  .top{
+  .top {
     height:144.4vw;
     width: 100%;
   }
 }
-.scene01{
+.scene01 {
   position: absolute;
   left: 0;
   top: 0;
@@ -150,11 +150,37 @@ top
   background-position: center top;
   background-repeat: no-repeat;
   background-size: auto;
+  opacity: 1;
+  transition: opacity .6s linear 0s;
 }
 @media (max-width: 800px) {
-  .scene01{
+  .scene01 {
     background-size: cover;
   }
+}
+.scene01.active {
+  opacity: 0;
+}
+.scene02 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  height:100%;
+  background-image: url("img/secen02.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto;
+  opacity: 0;
+  transition: opacity .6s linear 0s;
+}
+@media (max-width: 800px) {
+  .scene02{
+    background-size: cover;
+  }
+}
+.scene02.active {
+  opacity: 1;
 }
 .logo {
   position: absolute;
@@ -237,7 +263,7 @@ story
 @media (max-width: 800px){
   .story-header{
     width:100%;
-    height:13.4vw;
+    height:13vw;
     background-size: contain;
   }
 }

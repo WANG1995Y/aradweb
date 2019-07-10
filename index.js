@@ -1,3 +1,20 @@
+function topVisualScene01(){
+  setTimeout(function(){
+		$('.scene01').addClass('active');
+    $('.scene02').addClass('active');
+    topVisualScene02();
+	}, 3500);
+}
+function topVisualScene02(){
+  setTimeout(function(){
+		$('.scene01').removeClass('active');
+    $('.scene02').removeClass('active');
+    topVisualScene01();
+	}, 3500);
+}
+topVisualScene01();
+
+
 $('.m-menu-icon').click(function(){
   if($(this).hasClass('active')){
     $(this).removeClass('active');
